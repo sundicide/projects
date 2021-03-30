@@ -15,7 +15,8 @@
   <section class="header">
     <nav>
       <a href="index.html"><img src="images/logo.png"></a>
-      <div class="nav-links">
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
           <li><a href="">HOME</a></li>
           <li><a href="">ABOUT</a></li>
@@ -24,6 +25,7 @@
           <li><a href="">CONTACT</a></li>
         </ul>
       </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <div class="text-box">
       <h1>World's Biggest University</h1>
@@ -31,5 +33,42 @@
       <a href="" class="hero-btn">Visit us To Know More</a>
     </div>
   </section>
+  <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolo sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row">
+      <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin mollis dui, vel lacinia felis facilisis dapibus. Praesent imperdiet feugiat aliquet. Pellentesque libero neque, placerat vel nulla in, ultrices dapibus enim. Sed sodales hendrerit odio, nec vestibulum diam venenatis egestas. Vivamus a urna elit.
+        </p>
+      </div>
+      <div class="course-col">
+        <h3>Degree</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin mollis dui, vel lacinia felis facilisis dapibus. Praesent imperdiet feugiat aliquet. Pellentesque libero neque, placerat vel nulla in, ultrices dapibus enim. Sed sodales hendrerit odio, nec vestibulum diam venenatis egestas. Vivamus a urna elit.
+        </p>
+      </div>
+      <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin mollis dui, vel lacinia felis facilisis dapibus. Praesent imperdiet feugiat aliquet. Pellentesque libero neque, placerat vel nulla in, ultrices dapibus enim. Sed sodales hendrerit odio, nec vestibulum diam venenatis egestas. Vivamus a urna elit.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
 </body>
 </html>
