@@ -51,3 +51,10 @@ window.addEventListener('scroll', function() {
   header.classList.toggle('sticky', window.scrollY > 0);
 });
 ```
+
+# Results
+![](./result-images/main-page-01.png)
+![](./result-images/main-page-02.png)
+![](./result-images/main-page-03.png)
+![](./result-images/mobile-page-01.png)
+![](./result-images/mobile-page-02.png)
